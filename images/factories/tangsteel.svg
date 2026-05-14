@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="sky1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a365d"/>
+      <stop offset="100%" style="stop-color:#2a4a7f"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#sky1)"/>
+  <rect x="0" y="350" width="800" height="150" fill="#2d3748"/>
+  <rect x="100" y="180" width="600" height="170" fill="#4a5568" rx="4"/>
+  <rect x="100" y="180" width="600" height="30" fill="#2d3748"/>
+  <rect x="140" y="230" width="80" height="60" fill="#4299e1" opacity="0.6" rx="2"/>
+  <rect x="260" y="230" width="80" height="60" fill="#4299e1" opacity="0.6" rx="2"/>
+  <rect x="380" y="230" width="80" height="60" fill="#4299e1" opacity="0.6" rx="2"/>
+  <rect x="500" y="230" width="80" height="60" fill="#4299e1" opacity="0.6" rx="2"/>
+  <rect x="620" y="100" width="40" height="250" fill="#718096"/>
+  <rect x="610" y="90" width="60" height="20" fill="#4a5568"/>
+  <circle cx="640" cy="70" r="20" fill="#a0aec0" opacity="0.5"/>
+  <circle cx="660" cy="50" r="15" fill="#a0aec0" opacity="0.4"/>
+  <rect x="200" y="120" width="8" height="230" fill="#e53e3e"/>
+  <rect x="150" y="120" width="120" height="8" fill="#e53e3e"/>
+  <rect x="250" y="120" width="40" height="60" fill="#e53e3e"/>
+  <text x="400" y="420" text-anchor="middle" fill="white" font-size="28" font-family="Arial, sans-serif" font-weight="bold">唐钢</text>
+  <text x="400" y="455" text-anchor="middle" fill="#c9a96e" font-size="18" font-family="Arial, sans-serif">Tangsteel</text>
+</svg>

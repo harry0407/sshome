@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="sky2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d3748"/>
+      <stop offset="100%" style="stop-color:#4a5568"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#sky2)"/>
+  <rect x="0" y="360" width="800" height="140" fill="#1a202c"/>
+  <!-- Steel warehouse -->
+  <rect x="50" y="200" width="300" height="160" fill="#718096"/>
+  <polygon points="50,200 200,120 350,200" fill="#4a5568"/>
+  <rect x="80" y="260" width="60" height="100" fill="#4299e1" opacity="0.5"/>
+  <rect x="180" y="260" width="60" height="100" fill="#4299e1" opacity="0.5"/>
+  <rect x="280" y="260" width="40" height="100" fill="#a0aec0"/>
+  <!-- Second building -->
+  <rect x="400" y="240" width="350" height="120" fill="#4a5568"/>
+  <rect x="400" y="240" width="350" height="20" fill="#2d3748"/>
+  <rect x="430" y="280" width="50" height="40" fill="#4299e1" opacity="0.5"/>
+  <rect x="510" y="280" width="50" height="40" fill="#4299e1" opacity="0.5"/>
+  <rect x="590" y="280" width="50" height="40" fill="#4299e1" opacity="0.5"/>
+  <rect x="670" y="280" width="50" height="40" fill="#4299e1" opacity="0.5"/>
+  <!-- Steel coils -->
+  <ellipse cx="150" cy="380" rx="40" ry="40" fill="#e53e3e" opacity="0.8"/>
+  <ellipse cx="250" cy="380" rx="40" ry="40" fill="#e53e3e" opacity="0.8"/>
+  <ellipse cx="350" cy="380" rx="40" ry="40" fill="#e53e3e" opacity="0.8"/>
+  <text x="400" y="450" text-anchor="middle" fill="white" font-size="28" font-family="Arial, sans-serif" font-weight="bold">兆建</text>
+  <text x="400" y="485" text-anchor="middle" fill="#c9a96e" font-size="18" font-family="Arial, sans-serif">Zhaojian</text>
+</svg>

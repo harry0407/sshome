@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="sky5" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a365d"/>
+      <stop offset="100%" style="stop-color:#2a4a7f"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#sky5)"/>
+  <rect x="0" y="360" width="800" height="140" fill="#2d3748"/>
+  <!-- Galvanizing line -->
+  <rect x="100" y="220" width="600" height="140" fill="#4a5568"/>
+  <rect x="100" y="220" width="600" height="20" fill="#2d3748"/>
+  <!-- Zinc pot -->
+  <rect x="300" y="280" width="200" height="80" fill="#ecc94b" opacity="0.8"/>
+  <rect x="300" y="280" width="200" height="10" fill="#d69e2e"/>
+  <!-- Steel strip -->
+  <path d="M100,260 Q200,240 300,260 Q400,280 500,260 Q600,240 700,260" fill="none" stroke="#a0aec0" stroke-width="8"/>
+  <!-- Cooling section -->
+  <rect x="550" y="240" width="150" height="100" fill="#63b3ed" opacity="0.3"/>
+  <!-- Support structure -->
+  <rect x="150" y="220" width="10" height="140" fill="#718096"/>
+  <rect x="250" y="220" width="10" height="140" fill="#718096"/>
+  <rect x="450" y="220" width="10" height="140" fill="#718096"/>
+  <rect x="550" y="220" width="10" height="140" fill="#718096"/>
+  <text x="400" y="450" text-anchor="middle" fill="white" font-size="28" font-family="Arial, sans-serif" font-weight="bold">星瀚</text>
+  <text x="400" y="485" text-anchor="middle" fill="#c9a96e" font-size="18" font-family="Arial, sans-serif">Xinghan</text>
+</svg>

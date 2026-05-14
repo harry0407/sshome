@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>冷卷 | 聚鼎安盛</title>
+    <meta name="description" content="冷轧钢板具有良好的表面质量和尺寸精度，广泛应用于汽车、家电、五金等行业。">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .product-hero { background: linear-gradient(135deg, var(--primary), var(--primary-light)); padding: 80px 0; }
+        .product-hero h1 { color: white; font-size: 42px; }
+        .product-detail { padding: 60px 0; }
+        .detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+        .detail-img { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+        .detail-img img { width: 100%; display: block; }
+        .detail-info h2 { font-size: 28px; color: var(--primary); margin-bottom: 20px; }
+        .detail-info p { font-size: 16px; line-height: 1.8; color: #444; margin-bottom: 28px; }
+        .features { margin-bottom: 28px; }
+        .features h3 { font-size: 20px; color: var(--primary); margin-bottom: 16px; }
+        .features ul { list-style: none; }
+        .features li { padding: 8px 0; padding-left: 24px; position: relative; color: #444; }
+        .features li::before { content: "✓"; color: var(--secondary); position: absolute; left: 0; font-weight: bold; }
+        .usage-box { background: white; padding: 24px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+        .usage-box h3 { font-size: 20px; color: var(--primary); margin-bottom: 12px; }
+        .usage-box p { margin-bottom: 0; }
+        .back-link { display: inline-flex; align-items: center; gap: 8px; color: var(--primary); text-decoration: none; font-size: 16px; margin-bottom: 32px; transition: color 0.2s; }
+        .back-link:hover { color: var(--secondary); }
+        @media (max-width: 768px) { .detail-grid { grid-template-columns: 1fr; } .product-hero h1 { font-size: 28px; } }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">聚鼎安盛</a>
+            <div class="nav-links">
+                <a href="../index.html#profile" data-zh="公司简介" data-en="Company Profile">公司简介</a>
+                <a href="../index.html#products" data-zh="业务概况" data-en="Products">业务概况</a>
+                <a href="../index.html#contact" data-zh="联系我们" data-en="Contact Us">联系我们</a>
+            </div>
+            <div class="lang-switch">
+                <button onclick="switchLang('zh')" class="active" id="btn-zh">中文</button>
+                <span>|</span>
+                <button onclick="switchLang('en')" id="btn-en">EN</button>
+            </div>
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        </div>
+    </nav>
+    <section class="product-hero"><div class="container"><h1 data-zh="冷卷" data-en="Cold Rolled Coils">冷卷</h1></div></section>
+    <section class="product-detail">
+        <div class="container">
+            <a href="../index.html#products" class="back-link" data-zh="← 返回产品列表" data-en="← Back to Products">← 返回产品列表</a>
+            <div class="detail-grid">
+                <div class="detail-img"><img src="../images/products/cold-rolled.jpeg" alt="冷卷"></div>
+                <div class="detail-info">
+                    <h2 data-zh="冷卷" data-en="Cold Rolled Coils">冷卷</h2>
+                    <p data-zh="冷轧钢板具有良好的表面质量和尺寸精度，广泛应用于汽车、家电、五金等行业。冷轧工艺使钢材具有更高的强度和更好的表面光洁度，是精密制造的首选材料。" data-en="Cold-rolled steel sheets offer excellent surface quality and dimensional accuracy, widely used in automotive, home appliances, and hardware industries. The cold rolling process gives the steel higher strength and better surface finish, making it the preferred material for precision manufacturing.">冷轧钢板具有良好的表面质量和尺寸精度，广泛应用于汽车、家电、五金等行业。冷轧工艺使钢材具有更高的强度和更好的表面光洁度，是精密制造的首选材料。</p>
+                    <div class="features">
+                        <h3 data-zh="产品特点" data-en="Product Features">产品特点</h3>
+                        <ul>
+                            <li data-zh="表面光洁度高，Ra≤0.5μm" data-en="High surface finish, Ra≤0.5μm">表面光洁度高，Ra≤0.5μm</li>
+                            <li data-zh="尺寸精度高，公差小" data-en="High dimensional accuracy with tight tolerances">尺寸精度高，公差小</li>
+                            <li data-zh="强度高，可加工性好" data-en="High strength with good machinability">强度高，可加工性好</li>
+                            <li data-zh="适用于精密冲压和成型" data-en="Suitable for precision stamping and forming">适用于精密冲压和成型</li>
+                        </ul>
+                    </div>
+                    <div class="usage-box">
+                        <h3 data-zh="使用场景" data-en="Usage Scenarios">使用场景</h3>
+                        <p data-zh="汽车制造、家电外壳、五金配件、精密仪器、电子元件、办公家具" data-en="Automotive manufacturing, appliance housings, hardware fittings, precision instruments, electronic components, office furniture">汽车制造、家电外壳、五金配件、精密仪器、电子元件、办公家具</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer"><div class="container"><p data-zh="© 2024 唐山市聚鼎安盛进出口贸易有限公司 版权所有" data-en="© 2024 Tangshan Juding Ansheng Import & Export Trade Co., Ltd. All rights reserved.">© 2024 唐山市聚鼎安盛进出口贸易有限公司 版权所有</p></div></footer>
+    <script src="../script.js"></script>
+</body>
+</html>

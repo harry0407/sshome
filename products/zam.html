@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>锌铝镁卷板 | 聚鼎安盛</title>
+    <meta name="description" content="锌铝镁卷板是新一代高耐蚀镀层产品，具有自修复功能，使用寿命更长。">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .product-hero { background: linear-gradient(135deg, var(--primary), var(--primary-light)); padding: 80px 0; }
+        .product-hero h1 { color: white; font-size: 42px; }
+        .product-detail { padding: 60px 0; }
+        .detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+        .detail-img { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+        .detail-img img { width: 100%; display: block; }
+        .detail-info h2 { font-size: 28px; color: var(--primary); margin-bottom: 20px; }
+        .detail-info p { font-size: 16px; line-height: 1.8; color: #444; margin-bottom: 28px; }
+        .features { margin-bottom: 28px; }
+        .features h3 { font-size: 20px; color: var(--primary); margin-bottom: 16px; }
+        .features ul { list-style: none; }
+        .features li { padding: 8px 0; padding-left: 24px; position: relative; color: #444; }
+        .features li::before { content: "✓"; color: var(--secondary); position: absolute; left: 0; font-weight: bold; }
+        .usage-box { background: white; padding: 24px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+        .usage-box h3 { font-size: 20px; color: var(--primary); margin-bottom: 12px; }
+        .usage-box p { margin-bottom: 0; }
+        .back-link { display: inline-flex; align-items: center; gap: 8px; color: var(--primary); text-decoration: none; font-size: 16px; margin-bottom: 32px; transition: color 0.2s; }
+        .back-link:hover { color: var(--secondary); }
+        @media (max-width: 768px) { .detail-grid { grid-template-columns: 1fr; } .product-hero h1 { font-size: 28px; } }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">聚鼎安盛</a>
+            <div class="nav-links">
+                <a href="../index.html#profile" data-zh="公司简介" data-en="Company Profile">公司简介</a>
+                <a href="../index.html#products" data-zh="业务概况" data-en="Products">业务概况</a>
+                <a href="../index.html#contact" data-zh="联系我们" data-en="Contact Us">联系我们</a>
+            </div>
+            <div class="lang-switch">
+                <button onclick="switchLang('zh')" class="active" id="btn-zh">中文</button>
+                <span>|</span>
+                <button onclick="switchLang('en')" id="btn-en">EN</button>
+            </div>
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        </div>
+    </nav>
+    <section class="product-hero"><div class="container"><h1 data-zh="锌铝镁卷板" data-en="Zinc-Aluminum-Magnesium Coils">锌铝镁卷板</h1></div></section>
+    <section class="product-detail">
+        <div class="container">
+            <a href="../index.html#products" class="back-link" data-zh="← 返回产品列表" data-en="← Back to Products">← 返回产品列表</a>
+            <div class="detail-grid">
+                <div class="detail-img"><img src="../images/products/zam.jpeg" alt="锌铝镁卷板"></div>
+                <div class="detail-info">
+                    <h2 data-zh="锌铝镁卷板" data-en="Zinc-Aluminum-Magnesium Coils">锌铝镁卷板</h2>
+                    <p data-zh="锌铝镁卷板是新一代高耐蚀镀层产品，具有自修复功能，使用寿命更长。镀层中的镁元素能在切口处形成致密的保护膜，自动修复划伤和切口。" data-en="ZAM coils are next-generation high-corrosion-resistance coated products with self-healing properties and extended service life. The magnesium in the coating forms a dense protective film at cut edges, automatically repairing scratches and cuts.">锌铝镁卷板是新一代高耐蚀镀层产品，具有自修复功能，使用寿命更长。镀层中的镁元素能在切口处形成致密的保护膜，自动修复划伤和切口。</p>
+                    <div class="features">
+                        <h3 data-zh="产品特点" data-en="Product Features">产品特点</h3>
+                        <ul>
+                            <li data-zh="自修复功能，切口自动保护" data-en="Self-healing function for automatic cut-edge protection">自修复功能，切口自动保护</li>
+                            <li data-zh="耐腐蚀性是普通镀锌板的5-10倍" data-en="Corrosion resistance 5-10x better than regular galvanized steel">耐腐蚀性是普通镀锌板的5-10倍</li>
+                            <li data-zh="耐磨损性能优异" data-en="Excellent wear resistance">耐磨损性能优异</li>
+                            <li data-zh="适用于严苛环境" data-en="Suitable for harsh environments">适用于严苛环境</li>
+                        </ul>
+                    </div>
+                    <div class="usage-box">
+                        <h3 data-zh="使用场景" data-en="Usage Scenarios">使用场景</h3>
+                        <p data-zh="光伏支架、高速公路护栏、海洋工程、桥梁建设、隧道工程、农业温室" data-en="Photovoltaic racking, highway guardrails, marine engineering, bridge construction, tunnel engineering, agricultural greenhouses">光伏支架、高速公路护栏、海洋工程、桥梁建设、隧道工程、农业温室</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer"><div class="container"><p data-zh="© 2024 唐山市聚鼎安盛进出口贸易有限公司 版权所有" data-en="© 2024 Tangshan Juding Ansheng Import & Export Trade Co., Ltd. All rights reserved.">© 2024 唐山市聚鼎安盛进出口贸易有限公司 版权所有</p></div></footer>
+    <script src="../script.js"></script>
+</body>
+</html>
