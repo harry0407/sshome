@@ -167,20 +167,31 @@
                 </div>
                 <div class="inquiry-form">
                     <h3 data-zh="询价窗口" data-en="Inquiry Window">询价窗口</h3>
-                    <form id="inquiryForm" onsubmit="handleSubmit(event)">
-                        <input type="text" name="name" required placeholder="您的姓名 / Your Name" data-zh-placeholder="您的姓名" data-en-placeholder="Your Name">
-                        <input type="email" name="email" required placeholder="电子邮箱 / Email" data-zh-placeholder="电子邮箱" data-en-placeholder="Email">
-                        <select name="product" required>
-                            <option value="" data-zh="请选择产品" data-en="Select Product">请选择产品</option>
-                            <option value="冷卷" data-zh="冷卷" data-en="Cold Rolled Coils">冷卷</option>
-                            <option value="镀锌卷板" data-zh="镀锌卷板" data-en="Galvanized Steel Coils">镀锌卷板</option>
-                            <option value="镀铝锌卷板" data-zh="镀铝锌卷板" data-en="Galvalume Steel Coils">镀铝锌卷板</option>
-                            <option value="锌铝镁卷板" data-zh="锌铝镁卷板" data-en="Zinc-Aluminum-Magnesium Coils">锌铝镁卷板</option>
-                            <option value="镀锌花纹板" data-zh="镀锌花纹板" data-en="Galvanized Checkered Plates">镀锌花纹板</option>
-                        </select>
-                        <textarea name="message" rows="4" required placeholder="留言内容 / Message" data-zh-placeholder="留言内容" data-en-placeholder="Message"></textarea>
-                        <button type="submit" class="btn-primary" data-zh="提交询价" data-en="Submit Inquiry">提交询价</button>
-                    </form>
+<form action="https://api.web3forms.com/submit" method="POST" id="inquiryForm">
+    
+    <input type="hidden" name="access_key" value="a9904c16-5bf9-4e13-b2f8-3876d9c44527">
+    
+    <input type="hidden" name="subject" value="【聚鼎安盛官网】收到新客户询价！">
+    
+    <input type="hidden" name="redirect" value="https://jdasglobal.com">
+
+    <input type="text" name="name" required placeholder="您的姓名 / Your Name" data-zh-placeholder="您的姓名" data-en-placeholder="Your Name">
+    
+    <input type="email" name="email" required placeholder="电子邮箱 / Email" data-zh-placeholder="电子邮箱" data-en-placeholder="Email">
+    
+    <select name="product" required>
+        <option value="" data-zh="请选择产品" data-en="Select Product">请选择产品</option>
+        <option value="冷卷" data-zh="冷卷" data-en="Cold Rolled Coils">冷卷</option>
+        <option value="镀锌卷板" data-zh="镀锌卷板" data-en="Galvanized Steel Coils">镀锌卷板</option>
+        <option value="镀铝锌卷板" data-zh="镀铝锌卷板" data-en="Galvalume Steel Coils">镀铝锌卷板</option>
+        <option value="锌铝镁卷板" data-zh="锌铝镁卷板" data-en="Zinc-Aluminum-Magnesium Coils">锌铝镁卷板</option>
+        <option value="镀锌花纹板" data-zh="镀锌花纹板" data-en="Galvanized Checkered Plates">镀锌花纹板</option>
+    </select>
+    
+    <textarea name="message" rows="4" required placeholder="留言内容 / Message" data-zh-placeholder="留言内容" data-en-placeholder="Message"></textarea>
+    
+    <button type="submit" class="btn-primary" data-zh="提交询价" data-en="Submit Inquiry">提交询价</button>
+</form>
                     <div id="formSuccess" class="form-success" style="display:none;" data-zh="询价已提交，我们将尽快与您联系！" data-en="Your inquiry has been submitted. We will contact you soon!">询价已提交，我们将尽快与您联系！</div>
                 </div>
             </div>
