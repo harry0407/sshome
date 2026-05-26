@@ -13,8 +13,11 @@
         <div class="container">
             <a href="#" class="logo">聚鼎安盛</a>
             <div class="nav-links">
+                <a href="#home" data-zh="公司首页" data-en="Home">公司首页</a>
                 <a href="#profile" data-zh="公司简介" data-en="Company Profile">公司简介</a>
+                <a href="#factories" data-zh="合作工厂" data-en="Factories">合作工厂</a>
                 <a href="#products" data-zh="业务概况" data-en="Products">业务概况</a>
+                <a href="#honors" data-zh="企业荣誉" data-en="Honors">企业荣誉</a>
                 <a href="#contact" data-zh="联系我们" data-en="Contact Us">联系我们</a>
             </div>
             <div class="lang-switch">
@@ -28,23 +31,79 @@
 
     <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobileMenu">
+        <a href="#home" data-zh="公司首页" data-en="Home" onclick="closeMenu()">公司首页</a>
         <a href="#profile" data-zh="公司简介" data-en="Company Profile" onclick="closeMenu()">公司简介</a>
+        <a href="#factories" data-zh="合作工厂" data-en="Factories" onclick="closeMenu()">合作工厂</a>
         <a href="#products" data-zh="业务概况" data-en="Products" onclick="closeMenu()">业务概况</a>
+        <a href="#honors" data-zh="企业荣誉" data-en="Honors" onclick="closeMenu()">企业荣誉</a>
         <a href="#contact" data-zh="联系我们" data-en="Contact Us" onclick="closeMenu()">联系我们</a>
     </div>
 
     <!-- Hero Section -->
     <section class="hero">
+        <div class="hero-slides">
+            <div class="hero-slide active" style="background-image: url('images/hero-bg.png')"></div>
+            <div class="hero-slide" style="background-image: url('images/bg/steel-bg-1.jpg')"></div>
+            <div class="hero-slide" style="background-image: url('images/bg/hero-bg-3.jpg')"></div>
+        </div>
+        <div class="hero-overlay"></div>
         <div class="container hero-content">
             <h1>GLOBAL STEEL TRADE.<br>RELIABLE PARTNERSHIP.</h1>
             <h2 data-zh="唐山市聚鼎安盛进出口贸易有限公司" data-en="Tangshan Juding Ansheng Import & Export Trade Co., Ltd.">唐山市聚鼎安盛进出口贸易有限公司</h2>
             <p class="hero-desc" data-zh="连接优质钢材，服务全球客户" data-en="Connecting Quality Steel to the World">连接优质钢材，服务全球客户</p>
             <a href="#contact" class="btn-primary">GET A QUOTE</a>
         </div>
+        <div class="hero-dots">
+            <span class="hero-dot active" data-index="0"></span>
+            <span class="hero-dot" data-index="1"></span>
+            <span class="hero-dot" data-index="2"></span>
+        </div>
+    </section>
+
+    <!-- Company Home Summary -->
+    <section id="home" class="section bg-section bg-section-1">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-zh="公司首页" data-en="Company Home">公司首页</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="home-summary">
+                <div class="summary-card">
+                    <div class="summary-icon">🏭</div>
+                    <h3 data-zh="公司简介" data-en="Company Profile">公司简介</h3>
+                    <p data-zh="唐山市聚鼎安盛进出口贸易有限公司，京津冀地区钢材销售企业，主营镀锌钢材，拥有一级代理资质与一手现货资源。" data-en="Tangshan Juding Ansheng - a steel sales enterprise in the Beijing-Tianjin-Hebei region, specializing in galvanized steel with first-tier agency qualifications.">唐山市聚鼎安盛进出口贸易有限公司，京津冀地区钢材销售企业，主营镀锌钢材，拥有一级代理资质与一手现货资源。</p>
+                    <a href="#profile" class="summary-link" data-zh="了解更多 →" data-en="Learn More →">了解更多 →</a>
+                </div>
+                <div class="summary-card">
+                    <div class="summary-icon">🤝</div>
+                    <h3 data-zh="合作工厂" data-en="Partner Factories">合作工厂</h3>
+                    <p data-zh="与唐钢、兆建、冠洲、承钢、星瀚、日鑫、沧州中铁等多家知名钢厂建立长期稳定合作关系。" data-en="Long-term partnerships with Tangsteel, Zhaojian, Guanzhou, Chengsteel, Xinghan, Rixin, Cangzhou CITIC and more.">与唐钢、兆建、冠洲、承钢、星瀚、日鑫、沧州中铁等多家知名钢厂建立长期稳定合作关系。</p>
+                    <a href="#profile" class="summary-link" data-zh="了解更多 →" data-en="Learn More →">了解更多 →</a>
+                </div>
+                <div class="summary-card">
+                    <div class="summary-icon">📦</div>
+                    <h3 data-zh="业务概况" data-en="Business Overview">业务概况</h3>
+                    <p data-zh="主营冷卷、镀锌卷板、镀铝锌卷板、锌铝镁卷板、镀锌花纹板等优质钢材产品。" data-en="Main products: Cold Rolled Coils, Galvanized Steel Coils, Galvalume Coils, Zinc-Aluminum-Magnesium Coils, Checkered Plates.">主营冷卷、镀锌卷板、镀铝锌卷板、锌铝镁卷板、镀锌花纹板等优质钢材产品。</p>
+                    <a href="#products" class="summary-link" data-zh="了解更多 →" data-en="Learn More →">了解更多 →</a>
+                </div>
+                <div class="summary-card">
+                    <div class="summary-icon">🏆</div>
+                    <h3 data-zh="企业荣誉" data-en="Honors">企业荣誉</h3>
+                    <p data-zh="多年深耕钢铁贸易行业，凭借优质服务与诚信经营，获得业界广泛认可与多项荣誉。" data-en="Years of dedication in the steel trade industry, earning widespread recognition and multiple honors through quality service and integrity.">多年深耕钢铁贸易行业，凭借优质服务与诚信经营，获得业界广泛认可与多项荣誉。</p>
+                    <a href="#honors" class="summary-link" data-zh="了解更多 →" data-en="Learn More →">了解更多 →</a>
+                </div>
+                <div class="summary-card">
+                    <div class="summary-icon">📞</div>
+                    <h3 data-zh="联系我们" data-en="Contact Us">联系我们</h3>
+                    <p data-zh="梁经理 · 18631590090 · TSJDAS2019@126.com · 河北省唐山市路北区" data-en="Manager Liang · 18631590090 · TSJDAS2019@126.com · Lubei District, Tangshan, Hebei">梁经理 · 18631590090 · TSJDAS2019@126.com · 河北省唐山市路北区</p>
+                    <a href="#contact" class="summary-link" data-zh="立即询价 →" data-en="Get Quote →">立即询价 →</a>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Company Profile -->
-    <section id="profile" class="section bg-white">
+    <section id="profile" class="section bg-section bg-section-2">
         <div class="container">
             <div class="section-title">
                 <h2 data-zh="公司简介" data-en="Company Profile">公司简介</h2>
@@ -57,7 +116,7 @@
     </section>
 
     <!-- Partner Factories -->
-    <section class="section bg-gray">
+    <section id="factories" class="section bg-section bg-section-3">
         <div class="container">
             <div class="section-title">
                 <h2 data-zh="合作工厂" data-en="Partner Factories">合作工厂</h2>
@@ -97,7 +156,7 @@
     </section>
 
     <!-- Products -->
-    <section id="products" class="section bg-white">
+    <section id="products" class="section bg-section bg-section-4">
         <div class="container">
             <div class="section-title">
                 <h2 data-zh="业务概况" data-en="Business Overview">业务概况</h2>
@@ -138,8 +197,38 @@
         </div>
     </section>
 
+    <!-- Honors -->
+    <section id="honors" class="section bg-section bg-section-5">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-zh="企业荣誉" data-en="Corporate Honors">企业荣誉</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="honors-grid">
+                <div class="honor-card">
+                    <div class="honor-img">
+                        <img src="images/honors/honor1.jpg" alt="企业荣誉1">
+                    </div>
+                    <h3 data-zh="荣誉一" data-en="Honor 1">荣誉一</h3>
+                </div>
+                <div class="honor-card">
+                    <div class="honor-img">
+                        <img src="images/honors/honor2.jpg" alt="企业荣誉2">
+                    </div>
+                    <h3 data-zh="荣誉二" data-en="Honor 2">荣誉二</h3>
+                </div>
+                <div class="honor-card">
+                    <div class="honor-img">
+                        <img src="images/honors/honor3.jpg" alt="企业荣誉3">
+                    </div>
+                    <h3 data-zh="荣誉三" data-en="Honor 3">荣誉三</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Us -->
-    <section id="contact" class="section bg-gray">
+    <section id="contact" class="section bg-section bg-section-6">
         <div class="container">
             <div class="section-title">
                 <h2 data-zh="联系我们" data-en="Contact Us">联系我们</h2>

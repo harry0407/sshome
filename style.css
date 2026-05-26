@@ -117,7 +117,6 @@ body {
 
 /* Hero */
 .hero {
-    background: url('images/hero-bg.png') center center / cover no-repeat;
     color: white;
     min-height: 100vh;
     display: flex;
@@ -126,15 +125,63 @@ body {
     overflow: hidden;
 }
 
-.hero::before {
-    content: '';
+.hero-slides {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.hero-slide {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1.2s ease-in-out;
+}
+
+.hero-slide.active {
+    opacity: 1;
+}
+
+.hero-overlay {
     position: absolute;
     inset: 0;
     background: linear-gradient(to right, rgba(15, 23, 42, 0.9), rgba(30, 41, 59, 0.7), transparent);
+    z-index: 1;
+}
+
+.hero-dots {
+    position: absolute;
+    bottom: 36px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 12px;
+    z-index: 3;
+}
+
+.hero-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.hero-dot.active {
+    background: var(--secondary);
+    transform: scale(1.2);
+}
+
+.hero-dot:hover {
+    background: rgba(255, 255, 255, 0.7);
 }
 
 .hero-content {
     position: relative;
+    z-index: 2;
     text-align: left;
 }
 
@@ -210,6 +257,69 @@ body {
     background: var(--bg);
 }
 
+/* Section backgrounds — real scene images with overlay */
+.bg-section {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.bg-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.bg-section > .container {
+    position: relative;
+    z-index: 1;
+}
+
+.bg-section-1 {
+    background-image: url('images/bg/section-bg-1.jpg');
+}
+.bg-section-1::before {
+    background: rgba(245, 245, 245, 0.88);
+}
+
+.bg-section-2 {
+    background-image: url('images/bg/section-bg-2.jpg');
+}
+.bg-section-2::before {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.bg-section-3 {
+    background-image: url('images/bg/section-bg-3.jpg');
+}
+.bg-section-3::before {
+    background: rgba(240, 238, 232, 0.85);
+}
+
+.bg-section-4 {
+    background-image: url('images/bg/section-bg-4.jpg');
+}
+.bg-section-4::before {
+    background: rgba(245, 245, 245, 0.88);
+}
+
+.bg-section-5 {
+    background-image: url('images/bg/section-bg-5.jpg');
+}
+.bg-section-5::before {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.bg-section-6 {
+    background-image: url('images/bg/steel-bg-1.jpg');
+}
+.bg-section-6::before {
+    background: rgba(235, 232, 225, 0.85);
+}
+
 .section-title {
     text-align: center;
     margin-bottom: 48px;
@@ -232,6 +342,10 @@ body {
 .profile-content {
     max-width: 800px;
     margin: 0 auto;
+    background: white;
+    padding: 40px 48px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
 }
 
 .profile-content p {
@@ -276,6 +390,12 @@ body {
     color: var(--primary);
     font-size: 20px;
     border-top: 3px solid var(--secondary);
+    transition: background 0.3s, color 0.3s;
+}
+
+.factory-card:hover .factory-name {
+    background: var(--primary);
+    color: white;
 }
 
 /* Products */
@@ -407,6 +527,105 @@ body {
     font-size: 16px;
 }
 
+/* Home Summary */
+.home-summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.summary-card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(8px);
+    border-radius: 12px;
+    padding: 28px 24px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    border: 1px solid rgba(26, 54, 93, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.summary-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.15);
+}
+
+.summary-icon {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.summary-card h3 {
+    font-size: 20px;
+    color: var(--primary);
+    margin-bottom: 12px;
+}
+
+.summary-card p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+.summary-link {
+    display: inline-block;
+    color: var(--secondary);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.summary-link:hover {
+    color: var(--primary);
+}
+
+/* Honors */
+.honors-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.honor-card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(8px);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid rgba(26, 54, 93, 0.08);
+}
+
+.honor-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.15);
+}
+
+.honor-img {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4/3;
+    overflow: hidden;
+    background: linear-gradient(135deg, #e8e4dc, #d5d0c6);
+}
+
+.honor-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.honor-card h3 {
+    padding: 16px 20px;
+    text-align: center;
+    font-size: 18px;
+    color: var(--primary);
+    border-top: 3px solid var(--secondary);
+}
+
 /* Footer */
 .footer {
     background: var(--primary);
@@ -428,6 +647,13 @@ body {
     .products-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+    .home-summary {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .honors-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -440,8 +666,11 @@ body {
     .mobile-menu.open {
         display: block;
     }
-    .hero::before {
+    .hero-overlay {
         background: linear-gradient(to right, rgba(15, 23, 42, 0.9), rgba(30, 41, 59, 0.7));
+    }
+    .bg-section {
+        background-attachment: scroll;
     }
     .hero h1 {
         font-size: 32px;
@@ -459,6 +688,12 @@ body {
         grid-template-columns: 1fr;
     }
     .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    .home-summary {
+        grid-template-columns: 1fr;
+    }
+    .honors-grid {
         grid-template-columns: 1fr;
     }
     .section {
