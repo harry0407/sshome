@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60">
+  <defs>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#C41E24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8B1419;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Decorative red block -->
+  <rect x="0" y="8" width="8" height="44" rx="2" fill="url(#redGrad)"/>
+  <rect x="12" y="16" width="4" height="28" rx="1" fill="#C41E24" opacity="0.5"/>
+  <!-- Chinese name -->
+  <text x="28" y="42" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="30" font-weight="800" fill="#C41E24" letter-spacing="2">聚鼎安盛</text>
+  <!-- English subtitle -->
+  <text x="28" y="56" font-family="Arial, sans-serif" font-size="10" fill="#666" letter-spacing="3" font-weight="600">JUDING ANSHENG</text>
+</svg>
