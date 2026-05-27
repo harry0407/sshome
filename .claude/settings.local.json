@@ -4,7 +4,18 @@
       "Bash(curl -sL --max-time 15 \"http://kh.lgmi.com/tsdksm/index.html\")",
       "Bash(iconv -f gb2312 -t utf-8)",
       "WebFetch(domain:pixabay.com)",
-      "Bash(curl -sI \"https://images.unsplash.com/photo-1504917595217-d4dc5efe5a40?w=100\")"
+      "Bash(curl -sI \"https://images.unsplash.com/photo-1504917595217-d4dc5efe5a40?w=100\")",
+      "Bash(npm list *)",
+      "Bash(npm install *)",
+      "Bash(python -c \"import markdown; print\\('markdown ok'\\)\")",
+      "Bash(python -c \"import pdfkit; print\\('pdfkit ok'\\)\")",
+      "Bash(python -c \"import fpdf; print\\('fpdf ok'\\)\")",
+      "Bash(python -c \"from reportlab.lib.pagesizes import letter; print\\('reportlab ok'\\)\")",
+      "Bash(md-to-pdf \"聚鼎安盛官网产品成果展示.md\")",
+      "Bash(md-to-pdf \"聚鼎安盛官网板块使用介绍.md\")",
+      "Bash(python -c \"from pptx import Presentation; print\\('python-pptx ok'\\)\")",
+      "Bash(pip install *)",
+      "Bash(python generate_ppt.py)"
     ]
   }
 }

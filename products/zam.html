@@ -29,12 +29,22 @@
     </style>
 </head>
 <body>
+    <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <a href="../index.html" class="logo">聚鼎安盛</a>
+            <a href="../index.html" class="logo">
+                <img src="../images/logo.png" alt="聚鼎安盛" style="max-width: 75px; height: auto;">
+                <div class="logo-text">
+                    <span class="logo-name" data-zh="唐山市聚鼎安盛进出口贸易有限公司" data-en="Tangshan Juding Ansheng Import & Export Trade Co., Ltd.">唐山市聚鼎安盛进出口贸易有限公司</span>
+                    <span class="logo-name-en">Tangshan Juding Ansheng Import & Export Trade Co., Ltd.</span>
+                </div>
+            </a>
             <div class="nav-links">
+                <a href="../index.html#home" data-zh="公司首页" data-en="Home">公司首页</a>
                 <a href="../index.html#profile" data-zh="公司简介" data-en="Company Profile">公司简介</a>
+                <a href="../index.html#factories" data-zh="合作工厂" data-en="Factories">合作工厂</a>
                 <a href="../index.html#products" data-zh="业务概况" data-en="Products">业务概况</a>
+                <a href="../index.html#honors" data-zh="企业荣誉" data-en="Honors">企业荣誉</a>
                 <a href="../index.html#contact" data-zh="联系我们" data-en="Contact Us">联系我们</a>
             </div>
             <div class="lang-switch">
@@ -45,6 +55,17 @@
             <button class="menu-btn" onclick="toggleMenu()">☰</button>
         </div>
     </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="../index.html#home" data-zh="公司首页" data-en="Home" onclick="closeMenu()">公司首页</a>
+        <a href="../index.html#profile" data-zh="公司简介" data-en="Company Profile" onclick="closeMenu()">公司简介</a>
+        <a href="../index.html#factories" data-zh="合作工厂" data-en="Factories" onclick="closeMenu()">合作工厂</a>
+        <a href="../index.html#products" data-zh="业务概况" data-en="Products" onclick="closeMenu()">业务概况</a>
+        <a href="../index.html#honors" data-zh="企业荣誉" data-en="Honors" onclick="closeMenu()">企业荣誉</a>
+        <a href="../index.html#contact" data-zh="联系我们" data-en="Contact Us" onclick="closeMenu()">联系我们</a>
+    </div>
+
     <section class="product-hero"><div class="container"><h1 data-zh="锌铝镁卷板" data-en="Zinc-Aluminum-Magnesium Coils">锌铝镁卷板</h1></div></section>
     <section class="product-detail">
         <div class="container">
