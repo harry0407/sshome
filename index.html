@@ -102,7 +102,7 @@
                 <div class="summary-card">
                     <div class="summary-icon">📞</div>
                     <h3 data-zh="联系我们" data-en="Contact Us">联系我们</h3>
-                    <p data-zh="梁经理 · 18631590090 · TSJDAS2019@126.com · 河北省唐山市路北区" data-en="Manager Liang · 18631590090 · TSJDAS2019@126.com · Lubei District, Tangshan, Hebei">梁经理 · 18631590090 · TSJDAS2019@126.com · 河北省唐山市路北区</p>
+                    <p data-zh="总经理：梁秋冬 · 18631590090 · TSJDAS2019@126.com · 河北省唐山市路北区" data-en="GM: Qiudong Liang · 18631590090 · TSJDAS2019@126.com · Lubei District, Tangshan, Hebei">总经理：梁秋冬 · 18631590090 · TSJDAS2019@126.com · 河北省唐山市路北区</p>
                     <a href="#contact" class="summary-link" data-zh="立即询价 →" data-en="Get Quote →">立即询价 →</a>
                 </div>
             </div>
@@ -171,34 +171,104 @@
             </div>
             <div class="products-grid">
                 <a href="products/cold-rolled.html" class="product-card">
-                    <div class="product-img">
-                        <img src="images/products/cold-rolled.jpeg" alt="冷卷">
+                    <div class="product-img product-carousel" data-index="0">
+                        <div class="carousel-track">
+                            <img src="images/products/cold-rolled.jpeg" alt="冷卷">
+                            <img src="images/products/cold-rolled-2.png" alt="冷卷">
+                            <img src="images/products/cold-rolled-3.png" alt="冷卷">
+                        </div>
+                        <button class="carousel-btn carousel-prev" onclick="event.preventDefault(); event.stopPropagation(); slideProduct(this, -1)">‹</button>
+                        <button class="carousel-btn carousel-next" onclick="event.preventDefault(); event.stopPropagation(); slideProduct(this, 1)">›</button>
+                        <div class="carousel-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
                     </div>
-                    <h3 data-zh="冷卷" data-en="Cold Rolled Coils">冷卷</h3>
+                    <div class="product-content">
+                        <h3 data-zh="冷卷" data-en="Cold Rolled Coils">冷卷</h3>
+                        <span class="product-info-btn" data-zh="产品信息" data-en="Product Info">产品信息</span>
+                    </div>
                 </a>
                 <a href="products/galvanized.html" class="product-card">
-                    <div class="product-img">
-                        <img src="images/products/galvanized.jpeg" alt="镀锌卷板">
+                    <div class="product-img product-carousel" data-index="0">
+                        <div class="carousel-track">
+                            <img src="images/products/galvanized.jpeg" alt="镀锌卷板">
+                            <img src="images/products/galvanized-2.jpg" alt="镀锌卷板">
+                            <img src="images/products/galvanized-3.jpg" alt="镀锌卷板">
+                        </div>
+                        <button class="carousel-btn carousel-prev" onclick="event.preventDefault(); event.stopPropagation(); slideProduct(this, -1)">‹</button>
+                        <button class="carousel-btn carousel-next" onclick="event.preventDefault(); event.stopPropagation(); slideProduct(this, 1)">›</button>
+                        <div class="carousel-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
                     </div>
-                    <h3 data-zh="镀锌卷板" data-en="Galvanized Steel Coils">镀锌卷板</h3>
+                    <div class="product-content">
+                        <h3 data-zh="镀锌卷板" data-en="Galvanized Steel Coils">镀锌卷板</h3>
+                        <span class="product-info-btn" data-zh="产品信息" data-en="Product Info">产品信息</span>
+                    </div>
                 </a>
                 <a href="products/galvalume.html" class="product-card">
-                    <div class="product-img">
-                        <img src="images/products/galvalume.jpeg" alt="镀铝锌卷板">
+                    <div class="product-img product-carousel" data-index="0">
+                        <div class="carousel-track">
+                            <img src="images/products/galvalume.jpeg" alt="镀铝锌卷板">
+                            <img src="images/products/galvalume-2.jpg" alt="镀铝锌卷板">
+                            <img src="images/products/galvalume-3.png" alt="镀铝锌卷板">
+                        </div>
+                        <button class="carousel-btn carousel-prev" onclick="event.preventDefault(); event.stopPropagation(); slideProduct(this, -1)">‹</button>
+                        <button class="carousel-btn carousel-next" onclick="event.preventDefault(); event.stopPropagation(); slideProduct(this, 1)">›</button>
+                        <div class="carousel-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
                     </div>
-                    <h3 data-zh="镀铝锌卷板" data-en="Galvalume Steel Coils">镀铝锌卷板</h3>
+                    <div class="product-content">
+                        <h3 data-zh="镀铝锌卷板" data-en="Galvalume Steel Coils">镀铝锌卷板</h3>
+                        <span class="product-info-btn" data-zh="产品信息" data-en="Product Info">产品信息</span>
+                    </div>
                 </a>
                 <a href="products/zam.html" class="product-card">
-                    <div class="product-img">
-                        <img src="images/products/zam.jpeg" alt="锌铝镁卷板">
+                    <div class="product-img product-carousel" data-index="0">
+                        <div class="carousel-track">
+                            <img src="images/products/zam.jpeg" alt="锌铝镁卷板">
+                            <img src="images/products/zam-2.webp" alt="锌铝镁卷板">
+                            <img src="images/products/zam-3.webp" alt="锌铝镁卷板">
+                        </div>
+                        <button class="carousel-btn carousel-prev" onclick="event.preventDefault(); event.stopPropagation(); slideProduct(this, -1)">‹</button>
+                        <button class="carousel-btn carousel-next" onclick="event.preventDefault(); event.stopPropagation(); slideProduct(this, 1)">›</button>
+                        <div class="carousel-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
                     </div>
-                    <h3 data-zh="锌铝镁卷板" data-en="Zinc-Aluminum-Magnesium Coils">锌铝镁卷板</h3>
+                    <div class="product-content">
+                        <h3 data-zh="锌铝镁卷板" data-en="Zinc-Aluminum-Magnesium Coils">锌铝镁卷板</h3>
+                        <span class="product-info-btn" data-zh="产品信息" data-en="Product Info">产品信息</span>
+                    </div>
                 </a>
                 <a href="products/checkered.html" class="product-card">
-                    <div class="product-img">
-                        <img src="images/products/checkered.jpeg" alt="镀锌花纹板">
+                    <div class="product-img product-carousel" data-index="0">
+                        <div class="carousel-track">
+                            <img src="images/products/checkered.jpeg" alt="镀锌花纹板">
+                            <img src="images/products/checkered-2.jpg" alt="镀锌花纹板">
+                            <img src="images/products/checkered-3.jpg" alt="镀锌花纹板">
+                        </div>
+                        <button class="carousel-btn carousel-prev" onclick="event.preventDefault(); event.stopPropagation(); slideProduct(this, -1)">‹</button>
+                        <button class="carousel-btn carousel-next" onclick="event.preventDefault(); event.stopPropagation(); slideProduct(this, 1)">›</button>
+                        <div class="carousel-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
                     </div>
-                    <h3 data-zh="镀锌花纹板" data-en="Galvanized Checkered Plates">镀锌花纹板</h3>
+                    <div class="product-content">
+                        <h3 data-zh="镀锌花纹板" data-en="Galvanized Checkered Plates">镀锌花纹板</h3>
+                        <span class="product-info-btn" data-zh="产品信息" data-en="Product Info">产品信息</span>
+                    </div>
                 </a>
             </div>
         </div>
@@ -244,13 +314,54 @@
             <div class="contact-grid">
                 <div class="contact-info">
                     <h3 data-zh="联系方式" data-en="Contact Information">联系方式</h3>
-                    <div class="info-item">
-                        <span class="icon">👤</span>
-                        <span data-zh="梁经理" data-en="Manager Liang">梁经理</span>
+                    <div class="contact-group">
+                        <h4 data-zh="总经理：梁秋冬" data-en="General Manager: Qiudong Liang">总经理：梁秋冬</h4>
+                        <div class="info-item">
+                            <span class="icon">📞</span>
+                            <span>18631590090</span>
+                        </div>
                     </div>
-                    <div class="info-item">
-                        <span class="icon">📞</span>
-                        <span>18631590090</span>
+                    <div class="contact-group">
+                        <h4 data-zh="外贸经理：戚玉林" data-en="Foreign Trade Manager: Yulin Qi">外贸经理：戚玉林</h4>
+                        <div class="info-item">
+                            <span class="icon">📞</span>
+                            <span>15133923667</span>
+                        </div>
+                    </div>
+                    <div class="contact-group">
+                        <h4 data-zh="内贸业务" data-en="Domestic Trade">内贸业务</h4>
+                        <div class="info-item">
+                            <span class="icon">👤</span>
+                            <span data-zh="王学斌" data-en="Xuebin Wang">王学斌</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="icon">📞</span>
+                            <span>18632558545</span>
+                        </div>
+                    </div>
+                    <div class="contact-group">
+                        <div class="info-item">
+                            <span class="icon">👤</span>
+                            <span data-zh="董颖" data-en="Ying Dong">董颖</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="icon">📞</span>
+                            <span>17330598077</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="icon">📞</span>
+                            <span>13363384367</span>
+                        </div>
+                    </div>
+                    <div class="contact-group">
+                        <div class="info-item">
+                            <span class="icon">👤</span>
+                            <span data-zh="徐阳" data-en="Yang Xu">徐阳</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="icon">📞</span>
+                            <span>13363361949</span>
+                        </div>
                     </div>
                     <div class="info-item">
                         <span class="icon">✉️</span>

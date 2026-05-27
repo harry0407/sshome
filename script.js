@@ -112,6 +112,25 @@ function initHeroCarousel() {
     startAuto();
 }
 
+// Product Carousel
+function slideProduct(btn, direction) {
+    const carousel = btn.closest('.product-carousel');
+    const track = carousel.querySelector('.carousel-track');
+    const dots = carousel.querySelectorAll('.dot');
+    let index = parseInt(carousel.dataset.index);
+
+    index += direction;
+    if (index < 0) index = 2;
+    if (index > 2) index = 0;
+
+    carousel.dataset.index = index;
+    track.style.transform = `translateX(-${index * 100}%)`;
+
+    dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === index);
+    });
+}
+
 // Load saved language preference
 window.addEventListener('DOMContentLoaded', () => {
     const savedLang = localStorage.getItem('lang');
