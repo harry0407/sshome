@@ -15,7 +15,13 @@
       "Bash(md-to-pdf \"聚鼎安盛官网板块使用介绍.md\")",
       "Bash(python -c \"from pptx import Presentation; print\\('python-pptx ok'\\)\")",
       "Bash(pip install *)",
-      "Bash(python generate_ppt.py)"
+      "Bash(python generate_ppt.py)",
+      "WebSearch",
+      "WebFetch(domain:unsplash.com)",
+      "WebFetch(domain:www.pexels.com)",
+      "WebFetch(domain:stocksnap.io)",
+      "Bash(curl *)",
+      "Bash(python3 -c ' *)"
     ]
   }
 }

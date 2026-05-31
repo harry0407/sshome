@@ -1,0 +1,3 @@
+# Project Guidelines
+
+- 所有读取图片的操作不要用READ工具，全部交给mcp完成
